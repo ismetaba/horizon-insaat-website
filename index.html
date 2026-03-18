@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizon İnşaat | Geleceği İnşa Ediyoruz</title>
+    <title>Horizon İnşaat | Akdeniz'de Yaşam Başlıyor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,9 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="#hero" class="logo">
-                <img src="logo.png" alt="Horizon İnşaat" class="logo-img">
+                <div class="logo-wrap">
+                    <img src="logo.png" alt="Horizon İnşaat" class="logo-img">
+                </div>
             </a>
             <div class="nav-links">
                 <a href="#hero" class="nav-link active">Ana Sayfa</a>
@@ -37,9 +39,7 @@
                 <a href="#contact" class="btn btn-primary btn-sm">Bilgi Alın</a>
             </div>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Menü">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
@@ -53,7 +53,7 @@
             <a href="#features" class="mobile-link">Özellikler</a>
             <a href="#location" class="mobile-link">Konum</a>
             <a href="#contact" class="mobile-link">İletişim</a>
-            <a href="#contact" class="btn btn-primary" style="margin-top:2rem;">Bilgi Alın</a>
+            <a href="#contact" class="btn btn-secondary" style="margin-top:2rem;">Bilgi Alın</a>
         </div>
     </div>
 
@@ -69,19 +69,19 @@
                 Mersin / Davultepe'de İlk Projemiz Başlıyor
             </div>
             <h1 class="hero-title" data-animate="fade-up" data-delay="100">
-                Ufkun Ötesinde<br>
-                <span class="text-gradient">Yaşam Başlıyor</span>
+                Akdeniz'in Kıyısında<br>
+                <span class="text-accent">Hayalinizdeki Yaşam</span>
             </h1>
             <p class="hero-desc" data-animate="fade-up" data-delay="200">
-                Horizon İnşaat olarak, modern mimari anlayışı ve üstün yapı kalitesiyle
+                Horizon İnşaat olarak, Akdeniz'in eşsiz doğasını modern mimariyle buluşturuyoruz.
                 Mersin Davultepe'de hayalinizdeki yaşam alanını inşa ediyoruz.
             </p>
             <div class="hero-actions" data-animate="fade-up" data-delay="300">
-                <a href="#project" class="btn btn-primary btn-lg">
+                <a href="#project" class="btn btn-secondary btn-lg">
                     Projeyi Keşfet
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
-                <a href="#contact" class="btn btn-outline btn-lg">İletişime Geç</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">İletişime Geç</a>
             </div>
             <div class="hero-stats" data-animate="fade-up" data-delay="400">
                 <div class="stat">
@@ -101,28 +101,32 @@
             </div>
         </div>
         <div class="hero-scroll">
-            <div class="scroll-indicator">
-                <div class="scroll-line"></div>
-            </div>
+            <div class="scroll-indicator"><div class="scroll-line"></div></div>
             <span>Keşfet</span>
+        </div>
+        <!-- Wave Separator -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="#faf8f5"/>
+            </svg>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section section-cream">
         <div class="container">
             <div class="about-grid">
                 <div class="about-left" data-animate="fade-right">
                     <span class="section-tag">Hakkımızda</span>
                     <h2 class="section-title">
-                        Güvenin ve Kalitenin<br>
-                        <span class="text-gradient">Yeni Adresi</span>
+                        Akdeniz'in İncisi<br>
+                        <span class="text-gradient">Mersin'den Yükseliyoruz</span>
                     </h2>
                     <p class="about-text">
-                        Horizon İnşaat, ismini ufuk çizgisinden alır. Tıpkı ufkun sınırsızlığı gibi,
-                        biz de vizyonumuzu sürekli ileriye taşıyoruz. Mersin'in güzel ilçesi Davultepe'de
-                        başlattığımız ilk projemizle, modern yaşam standartlarını Akdeniz'in eşsiz
-                        doğasıyla buluşturuyoruz.
+                        Horizon İnşaat, ismini ufuk çizgisinden alır. Tıpkı denizle gökyüzünün buluştuğu
+                        o büyülü çizgi gibi, biz de vizyonumuzu sürekli ileriye taşıyoruz. Mersin'in güzel
+                        ilçesi Davultepe'de başlattığımız ilk projemizle, modern yaşam standartlarını
+                        Akdeniz'in eşsiz doğasıyla buluşturuyoruz.
                     </p>
                     <div class="about-values">
                         <div class="value-item">
@@ -148,8 +152,8 @@
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                             </div>
                             <div>
-                                <h4>Doğayla İç İçe</h4>
-                                <p>Akdeniz iklimini yaşam alanlarınıza taşıyoruz</p>
+                                <h4>Akdeniz Yaşamı</h4>
+                                <p>Denizin ve güneşin tadını çıkaracağınız yaşam alanları</p>
                             </div>
                         </div>
                     </div>
@@ -196,6 +200,14 @@
         </div>
     </section>
 
+    <!-- Wave: Cream to Dark -->
+    <div class="wave-separator">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#0c2d3f"/>
+            <path d="M0,50 C360,90 720,10 1080,50 C1260,70 1380,60 1440,50 L1440,80 L0,80 Z" fill="#0c2d3f" opacity="0.5"/>
+        </svg>
+    </div>
+
     <!-- Project Section -->
     <section id="project" class="section section-dark">
         <div class="container">
@@ -203,11 +215,11 @@
                 <span class="section-tag section-tag-light">Projemiz</span>
                 <h2 class="section-title section-title-light">
                     Davultepe'de Yükselen<br>
-                    <span class="text-gradient">Yeni Yaşam</span>
+                    <span class="text-gradient-sand">Yeni Yaşam</span>
                 </h2>
                 <p class="section-desc section-desc-light">
-                    Mersin Davultepe'nin en prestijli lokasyonunda, doğayla iç içe,
-                    modern mimarinin tüm olanaklarıyla donatılmış yaşam alanları.
+                    Mersin Davultepe'nin en prestijli lokasyonunda, Akdeniz esintileriyle
+                    bezeli, modern mimarinin tüm olanaklarıyla donatılmış yaşam alanları.
                 </p>
             </div>
 
@@ -216,149 +228,132 @@
                     <div class="project-visual">
                         <div class="building-illustration">
                             <svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="building-svg">
-                                <!-- Sky gradient -->
                                 <defs>
                                     <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:0.3" />
-                                        <stop offset="100%" style="stop-color:#16213e;stop-opacity:0.1" />
+                                        <stop offset="0%" style="stop-color:#134962;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#0c2d3f;stop-opacity:0.1" />
                                     </linearGradient>
                                 </defs>
-
-                                <!-- Ground -->
                                 <rect x="0" y="420" width="800" height="80" fill="url(#skyGrad)"/>
-                                <line x1="0" y1="420" x2="800" y2="420" stroke="rgba(200,170,110,0.3)" stroke-width="1"/>
-
-                                <!-- Building 1 - Left -->
-                                <rect x="80" y="180" width="180" height="240" rx="3" stroke="rgba(200,170,110,0.6)" stroke-width="1.5" fill="rgba(200,170,110,0.05)"/>
-                                <!-- Windows B1 -->
+                                <line x1="0" y1="420" x2="800" y2="420" stroke="rgba(26,107,138,0.3)" stroke-width="1"/>
+                                <!-- Building 1 -->
+                                <rect x="80" y="180" width="180" height="240" rx="3" stroke="rgba(26,107,138,0.5)" stroke-width="1.5" fill="rgba(26,107,138,0.04)"/>
                                 <g opacity="0.5">
-                                    <rect x="100" y="200" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="130" y="200" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="160" y="200" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="190" y="200" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="220" y="200" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="100" y="200" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="130" y="200" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="160" y="200" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="190" y="200" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="220" y="200" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
                                 <g opacity="0.5">
-                                    <rect x="100" y="245" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="130" y="245" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="160" y="245" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="190" y="245" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="220" y="245" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="100" y="245" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="130" y="245" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="160" y="245" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="190" y="245" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="220" y="245" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
                                 <g opacity="0.5">
-                                    <rect x="100" y="290" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="130" y="290" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="160" y="290" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="190" y="290" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="220" y="290" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="100" y="290" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="130" y="290" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="160" y="290" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="190" y="290" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="220" y="290" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
                                 <g opacity="0.5">
-                                    <rect x="100" y="335" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="130" y="335" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="160" y="335" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="190" y="335" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="220" y="335" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="100" y="335" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="130" y="335" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="160" y="335" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="190" y="335" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="220" y="335" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
-                                <!-- Door B1 -->
-                                <rect x="150" y="380" width="40" height="40" rx="2" stroke="rgba(200,170,110,0.6)" stroke-width="1.5" fill="rgba(200,170,110,0.1)"/>
-
-                                <!-- Building 2 - Center (Main/Tall) -->
-                                <rect x="300" y="80" width="200" height="340" rx="3" stroke="rgba(200,170,110,0.8)" stroke-width="2" fill="rgba(200,170,110,0.05)"/>
-                                <!-- Highlight line -->
-                                <line x1="300" y1="80" x2="300" y2="420" stroke="rgba(200,170,110,0.4)" stroke-width="3"/>
-                                <!-- Windows B2 -->
+                                <rect x="150" y="380" width="40" height="40" rx="2" stroke="rgba(26,107,138,0.5)" stroke-width="1.5" fill="rgba(26,107,138,0.08)"/>
+                                <!-- Building 2 - Main -->
+                                <rect x="300" y="80" width="200" height="340" rx="3" stroke="rgba(26,107,138,0.7)" stroke-width="2" fill="rgba(26,107,138,0.04)"/>
+                                <line x1="300" y1="80" x2="300" y2="420" stroke="rgba(201,169,110,0.3)" stroke-width="3"/>
                                 <g opacity="0.6">
-                                    <rect x="320" y="100" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="352" y="100" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="384" y="100" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="416" y="100" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="448" y="100" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
+                                    <rect x="320" y="100" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="352" y="100" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="384" y="100" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="416" y="100" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="448" y="100" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
                                 </g>
                                 <g opacity="0.6">
-                                    <rect x="320" y="148" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="352" y="148" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="384" y="148" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="416" y="148" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="448" y="148" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
+                                    <rect x="320" y="148" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="352" y="148" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="384" y="148" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="416" y="148" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="448" y="148" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
                                 </g>
                                 <g opacity="0.6">
-                                    <rect x="320" y="196" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="352" y="196" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="384" y="196" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="416" y="196" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="448" y="196" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
+                                    <rect x="320" y="196" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="352" y="196" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="384" y="196" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="416" y="196" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="448" y="196" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
                                 </g>
                                 <g opacity="0.6">
-                                    <rect x="320" y="244" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="352" y="244" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="384" y="244" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="416" y="244" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="448" y="244" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
+                                    <rect x="320" y="244" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="352" y="244" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="384" y="244" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="416" y="244" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="448" y="244" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
                                 </g>
                                 <g opacity="0.6">
-                                    <rect x="320" y="292" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="352" y="292" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="384" y="292" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="416" y="292" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="448" y="292" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
+                                    <rect x="320" y="292" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="352" y="292" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="384" y="292" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="416" y="292" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="448" y="292" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
                                 </g>
                                 <g opacity="0.6">
-                                    <rect x="320" y="340" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="352" y="340" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="384" y="340" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="416" y="340" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
-                                    <rect x="448" y="340" width="22" height="30" rx="2" stroke="rgba(200,170,110,0.5)" stroke-width="1" fill="rgba(200,170,110,0.1)"/>
+                                    <rect x="320" y="340" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="352" y="340" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="384" y="340" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="416" y="340" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
+                                    <rect x="448" y="340" width="22" height="30" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.08)"/>
                                 </g>
-                                <!-- Door B2 -->
-                                <rect x="375" y="385" width="50" height="35" rx="2" stroke="rgba(200,170,110,0.8)" stroke-width="1.5" fill="rgba(200,170,110,0.15)"/>
-                                <!-- Canopy -->
-                                <line x1="365" y1="385" x2="435" y2="385" stroke="rgba(200,170,110,0.6)" stroke-width="2"/>
-
-                                <!-- Building 3 - Right -->
-                                <rect x="540" y="220" width="180" height="200" rx="3" stroke="rgba(200,170,110,0.6)" stroke-width="1.5" fill="rgba(200,170,110,0.05)"/>
-                                <!-- Windows B3 -->
+                                <rect x="375" y="385" width="50" height="35" rx="2" stroke="rgba(26,107,138,0.7)" stroke-width="1.5" fill="rgba(26,107,138,0.12)"/>
+                                <line x1="365" y1="385" x2="435" y2="385" stroke="rgba(201,169,110,0.5)" stroke-width="2"/>
+                                <!-- Building 3 -->
+                                <rect x="540" y="220" width="180" height="200" rx="3" stroke="rgba(26,107,138,0.5)" stroke-width="1.5" fill="rgba(26,107,138,0.04)"/>
                                 <g opacity="0.5">
-                                    <rect x="560" y="240" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="590" y="240" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="620" y="240" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="650" y="240" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="680" y="240" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="560" y="240" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="590" y="240" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="620" y="240" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="650" y="240" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="680" y="240" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
                                 <g opacity="0.5">
-                                    <rect x="560" y="285" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="590" y="285" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="620" y="285" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="650" y="285" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="680" y="285" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="560" y="285" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="590" y="285" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="620" y="285" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="650" y="285" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="680" y="285" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
                                 <g opacity="0.5">
-                                    <rect x="560" y="330" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="590" y="330" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="620" y="330" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="650" y="330" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
-                                    <rect x="680" y="330" width="20" height="28" rx="2" stroke="rgba(200,170,110,0.4)" stroke-width="1" fill="rgba(200,170,110,0.08)"/>
+                                    <rect x="560" y="330" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="590" y="330" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="620" y="330" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="650" y="330" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
+                                    <rect x="680" y="330" width="20" height="28" rx="2" stroke="rgba(201,169,110,0.4)" stroke-width="1" fill="rgba(201,169,110,0.06)"/>
                                 </g>
-                                <!-- Door B3 -->
-                                <rect x="610" y="385" width="40" height="35" rx="2" stroke="rgba(200,170,110,0.6)" stroke-width="1.5" fill="rgba(200,170,110,0.1)"/>
-
+                                <rect x="610" y="385" width="40" height="35" rx="2" stroke="rgba(26,107,138,0.5)" stroke-width="1.5" fill="rgba(26,107,138,0.08)"/>
                                 <!-- Trees -->
-                                <circle cx="50" cy="400" r="20" stroke="rgba(200,170,110,0.2)" stroke-width="1" fill="rgba(200,170,110,0.03)"/>
-                                <line x1="50" y1="420" x2="50" y2="410" stroke="rgba(200,170,110,0.2)" stroke-width="1.5"/>
-                                <circle cx="760" cy="395" r="25" stroke="rgba(200,170,110,0.2)" stroke-width="1" fill="rgba(200,170,110,0.03)"/>
-                                <line x1="760" y1="420" x2="760" y2="408" stroke="rgba(200,170,110,0.2)" stroke-width="1.5"/>
-                                <circle cx="275" cy="405" r="15" stroke="rgba(200,170,110,0.15)" stroke-width="1" fill="rgba(200,170,110,0.02)"/>
-                                <line x1="275" y1="420" x2="275" y2="412" stroke="rgba(200,170,110,0.15)" stroke-width="1"/>
-                                <circle cx="530" cy="408" r="12" stroke="rgba(200,170,110,0.15)" stroke-width="1" fill="rgba(200,170,110,0.02)"/>
-                                <line x1="530" y1="420" x2="530" y2="414" stroke="rgba(200,170,110,0.15)" stroke-width="1"/>
-
-                                <!-- HORIZON text on main building -->
-                                <text x="400" y="70" text-anchor="middle" fill="rgba(200,170,110,0.6)" font-family="Inter, sans-serif" font-size="12" font-weight="600" letter-spacing="8">HORIZON</text>
+                                <circle cx="50" cy="400" r="20" stroke="rgba(26,107,138,0.2)" stroke-width="1" fill="rgba(26,107,138,0.03)"/>
+                                <line x1="50" y1="420" x2="50" y2="410" stroke="rgba(26,107,138,0.2)" stroke-width="1.5"/>
+                                <circle cx="760" cy="395" r="25" stroke="rgba(26,107,138,0.2)" stroke-width="1" fill="rgba(26,107,138,0.03)"/>
+                                <line x1="760" y1="420" x2="760" y2="408" stroke="rgba(26,107,138,0.2)" stroke-width="1.5"/>
+                                <circle cx="275" cy="405" r="15" stroke="rgba(26,107,138,0.15)" stroke-width="1" fill="rgba(26,107,138,0.02)"/>
+                                <line x1="275" y1="420" x2="275" y2="412" stroke="rgba(26,107,138,0.15)" stroke-width="1"/>
+                                <circle cx="530" cy="408" r="12" stroke="rgba(26,107,138,0.15)" stroke-width="1" fill="rgba(26,107,138,0.02)"/>
+                                <line x1="530" y1="420" x2="530" y2="414" stroke="rgba(26,107,138,0.15)" stroke-width="1"/>
+                                <text x="400" y="70" text-anchor="middle" fill="rgba(201,169,110,0.5)" font-family="Inter, sans-serif" font-size="12" font-weight="600" letter-spacing="8">HORIZON</text>
                             </svg>
                         </div>
                         <div class="project-label">
                             <span class="label-tag">YENİ PROJE</span>
                             <h3>Horizon Davultepe Residence</h3>
-                            <p>Modern yaşamın tüm konforlarıyla buluşan prestijli konut projesi</p>
+                            <p>Akdeniz esintileriyle bezeli, modern yaşamın tüm konforlarıyla buluşan prestijli konut projesi</p>
                         </div>
                     </div>
                 </div>
@@ -397,19 +392,21 @@
         </div>
     </section>
 
+    <!-- Wave: Dark to White -->
+    <div class="wave-separator wave-separator-flip">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#0c2d3f"/>
+        </svg>
+    </div>
+
     <!-- Features Section -->
     <section id="features" class="section">
         <div class="container">
             <div class="section-header" data-animate="fade-up">
                 <span class="section-tag">Özellikler</span>
-                <h2 class="section-title">
-                    Neden <span class="text-gradient">Horizon?</span>
-                </h2>
-                <p class="section-desc">
-                    Her detayı titizlikle planlanmış, yaşam kalitenizi en üst seviyeye taşıyacak özellikler.
-                </p>
+                <h2 class="section-title">Neden <span class="text-gradient">Horizon?</span></h2>
+                <p class="section-desc">Her detayı titizlikle planlanmış, Akdeniz yaşamının tüm güzelliklerini evinize taşıyacak özellikler.</p>
             </div>
-
             <div class="features-grid">
                 <div class="feature-card" data-animate="fade-up" data-delay="0">
                     <div class="feature-number">01</div>
@@ -463,6 +460,13 @@
         </div>
     </section>
 
+    <!-- Wave: White to Dark -->
+    <div class="wave-separator">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,20 C480,80 960,0 1440,40 L1440,80 L0,80 Z" fill="#0c2d3f"/>
+        </svg>
+    </div>
+
     <!-- Location Section -->
     <section id="location" class="section section-dark">
         <div class="container">
@@ -470,49 +474,27 @@
                 <div class="location-info" data-animate="fade-right">
                     <span class="section-tag section-tag-light">Konum</span>
                     <h2 class="section-title section-title-light">
-                        Davultepe,<br>
-                        <span class="text-gradient">Mersin</span>
+                        Davultepe,<br><span class="text-gradient-sand">Mersin</span>
                     </h2>
                     <p class="section-desc section-desc-light">
-                        Akdeniz'in incisi Mersin'in gözde bölgesi Davultepe'de,
-                        doğanın ve şehrin kesiştiği noktada yaşam.
+                        Akdeniz'in incisi Mersin'in gözde bölgesi Davultepe'de, doğanın ve şehrin kesiştiği noktada yaşam.
                     </p>
                     <div class="location-features">
                         <div class="loc-feature">
-                            <div class="loc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Kolay Ulaşım</strong>
-                                <span>Ana yollara ve toplu taşımaya yakın mesafe</span>
-                            </div>
+                            <div class="loc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                            <div><strong>Kolay Ulaşım</strong><span>Ana yollara ve toplu taşımaya yakın mesafe</span></div>
                         </div>
                         <div class="loc-feature">
-                            <div class="loc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                            </div>
-                            <div>
-                                <strong>Eğitim Kurumları</strong>
-                                <span>Okullara ve üniversitelere yakın mesafe</span>
-                            </div>
+                            <div class="loc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+                            <div><strong>Eğitim Kurumları</strong><span>Okullara ve üniversitelere yakın mesafe</span></div>
                         </div>
                         <div class="loc-feature">
-                            <div class="loc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Alışveriş Merkezleri</strong>
-                                <span>AVM ve market seçeneklerine yakın konum</span>
-                            </div>
+                            <div class="loc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></div>
+                            <div><strong>Alışveriş Merkezleri</strong><span>AVM ve market seçeneklerine yakın konum</span></div>
                         </div>
                         <div class="loc-feature">
-                            <div class="loc-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Sağlık Hizmetleri</strong>
-                                <span>Hastane ve sağlık merkezlerine kolay erişim</span>
-                            </div>
+                            <div class="loc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div>
+                            <div><strong>Sağlık Hizmetleri</strong><span>Hastane ve sağlık merkezlerine kolay erişim</span></div>
                         </div>
                     </div>
                 </div>
@@ -520,24 +502,18 @@
                     <div class="map-container">
                         <div class="map-placeholder">
                             <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Map outline -->
-                                <rect x="10" y="10" width="380" height="280" rx="8" stroke="rgba(200,170,110,0.3)" stroke-width="1" fill="rgba(200,170,110,0.03)"/>
-                                <!-- Roads -->
-                                <line x1="50" y1="150" x2="350" y2="150" stroke="rgba(200,170,110,0.2)" stroke-width="2"/>
-                                <line x1="200" y1="30" x2="200" y2="270" stroke="rgba(200,170,110,0.2)" stroke-width="2"/>
-                                <line x1="80" y1="80" x2="320" y2="220" stroke="rgba(200,170,110,0.1)" stroke-width="1.5"/>
-                                <line x1="320" y1="80" x2="80" y2="220" stroke="rgba(200,170,110,0.1)" stroke-width="1.5"/>
-                                <!-- Pin -->
-                                <circle cx="200" cy="140" r="15" fill="rgba(200,170,110,0.2)" stroke="rgba(200,170,110,0.8)" stroke-width="2"/>
-                                <circle cx="200" cy="140" r="5" fill="rgba(200,170,110,0.8)"/>
-                                <!-- Pin shadow -->
-                                <ellipse cx="200" cy="165" rx="10" ry="3" fill="rgba(200,170,110,0.15)"/>
-                                <!-- Label -->
-                                <text x="200" y="190" text-anchor="middle" fill="rgba(200,170,110,0.6)" font-family="Inter" font-size="11" font-weight="500">DAVULTEPE, MERSİN</text>
-                                <text x="200" y="208" text-anchor="middle" fill="rgba(200,170,110,0.4)" font-family="Inter" font-size="9">Horizon Residence</text>
-                                <!-- Compass -->
-                                <text x="350" y="50" text-anchor="middle" fill="rgba(200,170,110,0.3)" font-family="Inter" font-size="12" font-weight="600">N</text>
-                                <line x1="350" y1="55" x2="350" y2="70" stroke="rgba(200,170,110,0.2)" stroke-width="1"/>
+                                <rect x="10" y="10" width="380" height="280" rx="8" stroke="rgba(26,107,138,0.3)" stroke-width="1" fill="rgba(26,107,138,0.03)"/>
+                                <line x1="50" y1="150" x2="350" y2="150" stroke="rgba(26,107,138,0.15)" stroke-width="2"/>
+                                <line x1="200" y1="30" x2="200" y2="270" stroke="rgba(26,107,138,0.15)" stroke-width="2"/>
+                                <line x1="80" y1="80" x2="320" y2="220" stroke="rgba(26,107,138,0.08)" stroke-width="1.5"/>
+                                <line x1="320" y1="80" x2="80" y2="220" stroke="rgba(26,107,138,0.08)" stroke-width="1.5"/>
+                                <circle cx="200" cy="140" r="15" fill="rgba(26,107,138,0.15)" stroke="rgba(26,107,138,0.7)" stroke-width="2"/>
+                                <circle cx="200" cy="140" r="5" fill="rgba(26,107,138,0.8)"/>
+                                <ellipse cx="200" cy="165" rx="10" ry="3" fill="rgba(26,107,138,0.1)"/>
+                                <text x="200" y="190" text-anchor="middle" fill="rgba(26,107,138,0.6)" font-family="Inter" font-size="11" font-weight="500">DAVULTEPE, MERSİN</text>
+                                <text x="200" y="208" text-anchor="middle" fill="rgba(201,169,110,0.5)" font-family="Inter" font-size="9">Horizon Residence</text>
+                                <text x="350" y="50" text-anchor="middle" fill="rgba(26,107,138,0.3)" font-family="Inter" font-size="12" font-weight="600">N</text>
+                                <line x1="350" y1="55" x2="350" y2="70" stroke="rgba(26,107,138,0.2)" stroke-width="1"/>
                             </svg>
                         </div>
                     </div>
@@ -546,18 +522,19 @@
         </div>
     </section>
 
+    <!-- Wave: Dark to Gradient -->
+    <div class="wave-separator wave-separator-flip">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,30 C360,70 1080,10 1440,50 L1440,80 L0,80 Z" fill="#0c2d3f"/>
+        </svg>
+    </div>
+
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="container">
             <div class="cta-content" data-animate="fade-up">
-                <h2 class="cta-title">
-                    Hayalinizdeki Eve<br>
-                    <span class="text-gradient">Bir Adım Kaldı</span>
-                </h2>
-                <p class="cta-desc">
-                    Horizon İnşaat'ın Davultepe projesinde yerinizi ayırtmak ve
-                    detaylı bilgi almak için hemen iletişime geçin.
-                </p>
+                <h2 class="cta-title">Hayalinizdeki Eve<br><span class="text-gradient">Bir Adım Kaldı</span></h2>
+                <p class="cta-desc">Horizon İnşaat'ın Davultepe projesinde yerinizi ayırtmak ve detaylı bilgi almak için hemen iletişime geçin.</p>
                 <div class="cta-actions">
                     <a href="#contact" class="btn btn-primary btn-lg">Hemen Bilgi Alın</a>
                     <a href="tel:+905001234567" class="btn btn-outline btn-lg">
@@ -569,47 +546,33 @@
         </div>
     </section>
 
+    <!-- Wave: Gradient to Dark -->
+    <div class="wave-separator">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C240,0 480,80 720,40 C960,0 1200,80 1440,40 L1440,80 L0,80 Z" fill="#0c2d3f"/>
+        </svg>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="section section-dark">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info" data-animate="fade-right">
                     <span class="section-tag section-tag-light">İletişim</span>
-                    <h2 class="section-title section-title-light">
-                        Bizimle<br>
-                        <span class="text-gradient">İletişime Geçin</span>
-                    </h2>
-                    <p class="section-desc section-desc-light">
-                        Projemiz hakkında detaylı bilgi almak, şantiye ziyareti planlamak
-                        veya ön kayıt yaptırmak için bize ulaşın.
-                    </p>
+                    <h2 class="section-title section-title-light">Bizimle<br><span class="text-gradient-sand">İletişime Geçin</span></h2>
+                    <p class="section-desc section-desc-light">Projemiz hakkında detaylı bilgi almak, şantiye ziyareti planlamak veya ön kayıt yaptırmak için bize ulaşın.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Adres</strong>
-                                <span>Davultepe, Mersin / Türkiye</span>
-                            </div>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+                            <div><strong>Adres</strong><span>Davultepe, Mersin / Türkiye</span></div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            </div>
-                            <div>
-                                <strong>Telefon</strong>
-                                <span>+90 (500) 123 45 67</span>
-                            </div>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+                            <div><strong>Telefon</strong><span>+90 (500) 123 45 67</span></div>
                         </div>
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            </div>
-                            <div>
-                                <strong>E-posta</strong>
-                                <span>info@horizoninsaat.com</span>
-                            </div>
+                            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+                            <div><strong>E-posta</strong><span>info@horizoninsaat.com</span></div>
                         </div>
                     </div>
                 </div>
@@ -617,24 +580,12 @@
                     <form class="contact-form" id="contactForm">
                         <h3>Bilgi Talep Formu</h3>
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Ad Soyad</label>
-                                <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX" required>
-                            </div>
+                            <div class="form-group"><label for="name">Ad Soyad</label><input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required></div>
+                            <div class="form-group"><label for="phone">Telefon</label><input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX" required></div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">E-posta</label>
-                            <input type="email" id="email" name="email" placeholder="ornek@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mesajınız</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Proje hakkında bilgi almak istiyorum..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                        <div class="form-group"><label for="email">E-posta</label><input type="email" id="email" name="email" placeholder="ornek@email.com"></div>
+                        <div class="form-group"><label for="message">Mesajınız</label><textarea id="message" name="message" rows="4" placeholder="Proje hakkında bilgi almak istiyorum..."></textarea></div>
+                        <button type="submit" class="btn btn-secondary btn-lg btn-full">
                             Bilgi Talep Et
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </button>
@@ -650,9 +601,11 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <a href="#hero" class="logo">
-                        <img src="logo.png" alt="Horizon İnşaat" class="logo-img logo-img-footer">
+                        <div class="logo-wrap">
+                            <img src="logo.png" alt="Horizon İnşaat" class="logo-img" style="height:45px;">
+                        </div>
                     </a>
-                    <p class="footer-tagline">Ufkun ötesinde yaşam başlıyor.</p>
+                    <p class="footer-tagline">Akdeniz'in kıyısında, ufkun ötesinde yaşam.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-col">
@@ -673,21 +626,15 @@
             <div class="footer-bottom">
                 <p>&copy; 2025 Horizon İnşaat. Tüm hakları saklıdır.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                    </a>
-                    <a href="#" aria-label="WhatsApp">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-                    </a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
+    <!-- WhatsApp Float -->
     <a href="#contact" class="whatsapp-float" aria-label="WhatsApp ile iletişim">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>

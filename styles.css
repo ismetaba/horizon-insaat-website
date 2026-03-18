@@ -217,7 +217,9 @@ img { max-width: 100%; display: block; }
 #hero {
     min-height: 100vh; display: flex; align-items: center; justify-content: center;
     position: relative; overflow: hidden; z-index: 1;
-    background: linear-gradient(160deg, var(--deep) 0%, var(--sea-dark) 40%, var(--sea) 100%);
+    background:
+        linear-gradient(160deg, rgba(12,45,63,0.92) 0%, rgba(20,90,116,0.88) 40%, rgba(26,107,138,0.85) 100%),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=900&fit=crop&q=80') center/cover no-repeat;
 }
 #about, #project, #features, #location, #contact, .cta-section, .wave-separator, .footer { position: relative; z-index: 2; }
 .hero-bg { position: absolute; inset: 0; }
@@ -310,17 +312,9 @@ img { max-width: 100%; display: block; }
     gap: 16px; height: 500px;
 }
 .about-img { border-radius: 20px; overflow: hidden; position: relative; }
-.about-img-1 {
-    grid-row: 1 / 3;
-    background: linear-gradient(135deg, var(--sea-pale), var(--cream));
-}
-.about-img-2 { background: linear-gradient(135deg, var(--cream), var(--sand-pale)); }
-.img-placeholder {
-    width: 100%; height: 100%; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; gap: 16px; padding: 24px;
-}
-.img-placeholder svg { width: 80%; max-width: 120px; color: var(--sea); opacity: 0.3; }
-.img-placeholder span { font-size: 12px; color: var(--sea); opacity: 0.5; letter-spacing: 1px; text-transform: uppercase; }
+.about-img img { width: 100%; height: 100%; object-fit: cover; }
+.about-img-1 { grid-row: 1 / 3; }
+.about-img-2 { }
 .about-experience {
     background: linear-gradient(135deg, var(--sea), var(--sea-light));
     border-radius: 20px; display: flex; flex-direction: column;
@@ -418,8 +412,6 @@ img { max-width: 100%; display: block; }
 .loc-feature span { font-size: 13px; color: rgba(255,255,255,0.55); }
 
 .map-container { border-radius: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); background: var(--deep-2); }
-.map-placeholder { padding: 20px; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; }
-.map-placeholder svg { width: 100%; height: auto; }
 
 /* ========== CTA ========== */
 .cta-section {

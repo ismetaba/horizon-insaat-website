@@ -329,15 +329,73 @@ img { max-width: 100%; display: block; }
 .wave-separator-flip { transform: scaleY(-1); }
 
 /* ========== PROJECT ========== */
-.project-showcase { margin-bottom: 50px; }
+.project-showcase { margin-bottom: 40px; }
+.project-hero-img { width: 100%; height: auto; display: block; }
 .project-main {
     border-radius: 24px; overflow: hidden;
     border: 1px solid rgba(255,255,255,0.08);
     box-shadow: 0 8px 40px rgba(0,0,0,0.2);
 }
-.project-visual { position: relative; background: linear-gradient(180deg, var(--deep-2), var(--deep-3)); }
-.building-illustration { padding: 40px; display: flex; align-items: center; justify-content: center; }
-.building-svg { width: 100%; max-width: 800px; }
+.project-visual { position: relative; overflow: hidden; }
+.project-visual img { width: 100%; height: auto; display: block; }
+
+/* Project Gallery */
+.project-gallery { margin-bottom: 40px; }
+.gallery-item {
+    position: relative; border-radius: 24px; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.gallery-item img { width: 100%; height: auto; display: block; }
+.gallery-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 20px 30px;
+    background: linear-gradient(transparent, rgba(12,45,63,0.85));
+}
+.gallery-overlay span { color: var(--white); font-size: 14px; font-weight: 500; letter-spacing: 1px; }
+
+/* Apartment Types */
+.apartment-types { margin-bottom: 50px; }
+.apt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.apt-card {
+    background: var(--deep-2); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px; overflow: hidden; transition: all 0.3s var(--ease-out);
+}
+.apt-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.2); border-color: rgba(26,107,138,0.3); }
+.apt-img { position: relative; overflow: hidden; height: 220px; }
+.apt-img img { width: 100%; height: 100%; object-fit: cover; }
+.apt-badge {
+    position: absolute; top: 16px; right: 16px;
+    background: var(--sea); color: var(--white);
+    padding: 6px 16px; border-radius: 50px;
+    font-size: 14px; font-weight: 700; letter-spacing: 1px;
+}
+.apt-info { padding: 24px; }
+.apt-info h4 { color: var(--white); font-size: 18px; margin-bottom: 14px; font-family: var(--font-display); }
+.apt-info ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.apt-info li {
+    color: rgba(255,255,255,0.6); font-size: 14px;
+    padding-left: 20px; position: relative;
+}
+.apt-info li::before {
+    content: ''; position: absolute; left: 0; top: 7px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--sea-light), var(--sand));
+}
+
+/* Interior Gallery */
+.interior-gallery { margin-bottom: 20px; }
+.interior-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.interior-item {
+    position: relative; border-radius: 16px; overflow: hidden;
+    aspect-ratio: 4/3; border: 1px solid rgba(255,255,255,0.06);
+}
+.interior-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.interior-item:hover img { transform: scale(1.05); }
+.interior-item span {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 10px 16px; background: linear-gradient(transparent, rgba(12,45,63,0.8));
+    color: var(--white); font-size: 13px; font-weight: 500;
+}
 .project-label {
     padding: 30px 40px; background: var(--deep-2);
     border-top: 1px solid rgba(255,255,255,0.06);
@@ -518,9 +576,11 @@ img { max-width: 100%; display: block; }
     .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .project-info-grid { grid-template-columns: repeat(2, 1fr); }
+    .interior-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
+    .apt-grid { grid-template-columns: 1fr; }
     .nav-links, .nav-cta { display: none; }
     .mobile-toggle { display: flex; }
     .section { padding: 70px 0; }

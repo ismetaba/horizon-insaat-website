@@ -146,22 +146,31 @@ img { max-width: 100%; display: block; }
 }
 
 /* Logo */
-.logo { display: flex; align-items: center; z-index: 10; }
-.logo-wrap {
-    position: relative; display: flex; align-items: center; justify-content: center;
-    padding: 6px; background: var(--white); border-radius: 14px;
-    box-shadow: 0 2px 16px rgba(26, 107, 138, 0.12), 0 0 0 1px rgba(26, 107, 138, 0.06);
+.logo { display: flex; align-items: center; gap: 14px; z-index: 10; }
+.logo-mark {
+    width: 52px; height: 34px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white);
     transition: all 0.3s var(--ease-out);
 }
-.logo-wrap:hover { box-shadow: 0 4px 24px rgba(26, 107, 138, 0.18), 0 0 0 1px rgba(26, 107, 138, 0.1); }
-.logo-wrap::after {
-    content: ''; position: absolute; bottom: -3px; left: 50%; transform: translateX(-50%);
-    width: 60%; height: 3px; border-radius: 3px;
-    background: linear-gradient(90deg, var(--sea), var(--sand)); opacity: 0.7;
+.logo-svg { width: 100%; height: 100%; }
+.logo-text { display: flex; flex-direction: column; line-height: 1; }
+.logo-name {
+    font-size: 20px; font-weight: 800; letter-spacing: 5px;
+    color: var(--white); transition: color 0.3s ease;
 }
-.logo-img { height: 52px; width: auto; object-fit: contain; border-radius: 8px; transition: height 0.3s var(--ease-out); }
-#navbar.scrolled .logo-img { height: 42px; }
-#navbar.scrolled .logo-wrap { padding: 4px; border-radius: 10px; }
+.logo-sub {
+    font-size: 9px; font-weight: 600; letter-spacing: 7px;
+    color: var(--sand); margin-top: 2px; transition: color 0.3s ease;
+}
+
+#navbar.scrolled .logo-mark { color: var(--sea); }
+#navbar.scrolled .logo-name { color: var(--dark); }
+#navbar.scrolled .logo-sub { color: var(--sand); }
+
+.footer .logo-mark { color: rgba(255,255,255,0.7); }
+.footer .logo-name { color: var(--white); }
+.footer .logo-sub { color: var(--sand-light); }
 
 /* Nav Links */
 .nav-links { display: flex; align-items: center; gap: 36px; }
@@ -469,9 +478,6 @@ img { max-width: 100%; display: block; }
 .footer-top {
     display: flex; justify-content: space-between; gap: 60px;
     padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.footer-brand .logo-wrap {
-    background: rgba(255,255,255,0.95); box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 .footer-tagline { color: rgba(255,255,255,0.45); font-size: 14px; margin-top: 16px; font-style: italic; }
 .footer-links { display: flex; gap: 80px; }

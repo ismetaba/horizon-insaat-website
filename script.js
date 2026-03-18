@@ -163,13 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---- Parallax Effect on Hero ----
-    const heroContent = document.querySelector('.hero-content');
+    // ---- Fade Hero on Scroll ----
+    const heroEl = document.getElementById('hero');
     window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        if (scrollY < window.innerHeight && heroContent) {
-            heroContent.style.transform = `translateY(${scrollY * 0.15}px)`;
-            heroContent.style.opacity = 1 - (scrollY / window.innerHeight) * 0.6;
+        if (heroEl && window.scrollY < window.innerHeight) {
+            heroEl.style.opacity = 1 - (window.scrollY / window.innerHeight) * 0.5;
         }
     }, { passive: true });
 

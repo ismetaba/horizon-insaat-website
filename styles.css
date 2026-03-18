@@ -13,10 +13,10 @@
     --deep: #0c2d3f;
     --deep-2: #0f3a50;
     --deep-3: #134962;
-    --cream: #faf8f5;
+    --cream: #f0ece5;
     --white: #ffffff;
     --dark: #1a2332;
-    --gray: #6b7a8d;
+    --gray: #4a5568;
     --gray-light: #9aa8b8;
     --border: rgba(26, 107, 138, 0.12);
 
@@ -207,9 +207,10 @@ img { max-width: 100%; display: block; }
 /* ========== HERO ========== */
 #hero {
     min-height: 100vh; display: flex; align-items: center; justify-content: center;
-    position: relative; overflow: hidden;
+    position: relative; overflow: hidden; z-index: 1;
     background: linear-gradient(160deg, var(--deep) 0%, var(--sea-dark) 40%, var(--sea) 100%);
 }
+#about, #project, #features, #location, #contact, .cta-section, .wave-separator, .footer { position: relative; z-index: 2; }
 .hero-bg { position: absolute; inset: 0; }
 .hero-gradient {
     position: absolute; inset: 0;
@@ -276,7 +277,7 @@ img { max-width: 100%; display: block; }
 
 /* ========== ABOUT ========== */
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.about-text { font-size: 1.05rem; color: var(--gray); line-height: 1.8; margin-bottom: 40px; }
+.about-text { font-size: 1.05rem; color: var(--dark); opacity: 0.75; line-height: 1.8; margin-bottom: 40px; }
 .about-values { display: flex; flex-direction: column; gap: 20px; }
 .value-item {
     display: flex; align-items: flex-start; gap: 16px; padding: 18px;
